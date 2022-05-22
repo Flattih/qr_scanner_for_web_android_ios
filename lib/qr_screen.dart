@@ -14,11 +14,11 @@ class QrScreen extends StatefulWidget {
 
 class _QrScreenState extends State<QrScreen> {
   late MobileScannerController cameraController;
-  late TextEditingController textEditingController;
+ 
   @override
   void initState() {
     cameraController = MobileScannerController();
-    textEditingController = TextEditingController();
+   
     super.initState();
   }
 
@@ -26,7 +26,7 @@ class _QrScreenState extends State<QrScreen> {
   void dispose() {
     super.dispose();
     cameraController.dispose();
-    textEditingController.dispose();
+    
   }
 
   @override
